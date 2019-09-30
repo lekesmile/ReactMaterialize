@@ -16,24 +16,24 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles({
     maindiv: {
         display: 'flex',
-        direction:"row",
-        justify:"space-between",
-        alignItems:"center",
+        direction: "row",
+        justify: "space-between",
+        alignItems: "center",
         width: 1200,
         margin: 'auto'
-        
+
     },
     firstcontainer: {
         display: 'flex',
         flexWrap: 'wrap',
         width: 500,
         marginTop: 50,
-        // backgroundColor: 'yellow',
-        float:'right'
+        backgroundColor: '#FFEBCD',
+        float: 'right'
     },
 
-    secondcontainer:{
-       
+    secondcontainer: {
+
         width: 400,
         marginTop: 50,
         float: 'left'
@@ -49,11 +49,11 @@ const useStyles = makeStyles({
         margin: 20,
     },
 
-    checkbox:{
+    checkbox: {
         display: 'flex',
         marginTop: 50,
-    }, 
-   
+    },
+
 
 })
 
@@ -77,28 +77,28 @@ const Footer = () => {
                         <FormControlLabel value="male" control={<Radio />} label="Male" />
                         <FormControlLabel value="other" control={<Radio />} label="Other" />
                     </RadioGroup>
-                    
-                   
-                    <TextField className={classes.root} margin="normal" label="Message" type="text"></TextField>
-              <FormControl className={classes.checkbox}>
-                    <FormLabel component="label">Subscription</FormLabel>
-                    <FormGroup>
-                        <FormControlLabel
-                            control={<Checkbox color="danger" />}
-                            label="Subscribe for newsletter"
-                            labelPlacement="end"
-                        />
-                        <FormControlLabel
-                            control={<Checkbox color="danger" />}
-                            label="Send me all stuff you have"
-                            labelPlacement="end"
-                        />
-                    </FormGroup>
 
-                     <Button variant="outlined" color="primary" className={classes.button}> Submit </Button>
+
+                    <TextField className={classes.root} margin="normal" label="Message" type="text"></TextField>
+                    <FormControl className={classes.checkbox}>
+                        <FormLabel component="label">Subscription</FormLabel>
+                        <FormGroup>
+                            <FormControlLabel
+                                control={<Checkbox color="danger" />}
+                                label="Subscribe for newsletter"
+                                labelPlacement="end"
+                            />
+                            <FormControlLabel
+                                control={<Checkbox color="danger" />}
+                                label="Send me all stuff you have"
+                                labelPlacement="end"
+                            />
+                        </FormGroup>
+
+                        <Button variant="outlined" color="primary" className={classes.button}> Submit </Button>
+                    </FormControl>
                 </FormControl>
-                </FormControl>
-               
+
             </form>
             <div className={classes.secondcontainer} >
                 <MainNavigation />
