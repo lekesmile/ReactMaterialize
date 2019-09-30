@@ -4,5 +4,5 @@ This is a simple project on React js using Google material UI for styling.
 
 #Material UI
 
-In this project I learn how to use the material ui for creating navbar, forms, cards.
+In this project I learn how to use the material ui for creating navbar, forms, buttons, cards etc.
 Additionally, Map() function form our API request to display its content.
